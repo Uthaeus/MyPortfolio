@@ -21,10 +21,6 @@
 
     <%= render "shared/nav", location: 'bottom' %>
 
-    <div>
-      <% if session[:source] %>
-        Thanks for visiting from <%= session[:source] %>
-      <% end %>
-    </div>
+    <%= source_helper("blog") %>
   </body>
 </html>
