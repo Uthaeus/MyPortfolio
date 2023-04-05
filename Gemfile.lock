@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Uthaeus/personal_view_tool
+  revision: 7cdae4c703874e10c28ec48ff380d59b5f861e44
+  specs:
+    personal_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -222,6 +228,7 @@ DEPENDENCIES
   friendly_id (~> 5.5)
   importmap-rails
   jbuilder
+  personal_view_tool!
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)

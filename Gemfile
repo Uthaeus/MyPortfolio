@@ -68,3 +68,5 @@ group :development do
 end
 
 gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+
+gem 'personal_view_tool', git: "https://github.com/Uthaeus/personal_view_tool"
