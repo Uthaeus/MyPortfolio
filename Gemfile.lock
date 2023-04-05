@@ -139,6 +139,8 @@ GEM
     nokogiri (1.14.2-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    petergate (3.0.0)
+      activerecord (> 4.0.0)
     pg (1.4.6)
     popper_js (2.11.6)
     puma (5.6.5)
@@ -229,6 +231,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   personal_view_tool!
+  petergate (~> 3.0)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
