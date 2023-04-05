@@ -8,6 +8,6 @@
 <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
 
 <p>
-    <%= link_to "Edit", edit_portfolio_path(portfolio_item) %>
-    <%= button_to "Destroy Portfolio Item", portfolio_item, class: 'btn btn-primary', method: :delete %>
+    <%= link_to "Edit", edit_portfolio_path(portfolio_item) if logged_in?(:site_admin) %>
+    <%= button_to "Destroy Portfolio Item", portfolio_item, class: 'btn btn-primary', method: :delete if logged_in?(:site_admin) %>
 </p>
