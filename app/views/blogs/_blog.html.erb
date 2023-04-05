@@ -1,5 +1,6 @@
 <div id="<%= dom_id blog %>">
   <h3><%= blog.title %></h3>
+  <p>Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
   <p><%= blog.body %></p>
   <p><%= link_to blog.status, toggle_status_blog_path(blog) %></p>
   <p>
