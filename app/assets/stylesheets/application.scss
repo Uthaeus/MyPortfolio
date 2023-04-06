@@ -51,3 +51,20 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+/* 
+Custom Styles
+*/
+
+.card-body {
+  color: #161616;
+  text-align: left;
+
+  .btn {
+    margin-top: 15px;
+  }
+
+  .auth-links a {
+    color: #161616;
+  }
+}
