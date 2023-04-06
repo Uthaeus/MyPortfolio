@@ -13,18 +13,14 @@
   </head>
 
   <body class="d-flex min-vh-100 text-center text-bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
+    
+    <div class="cover-container d-flex w-100 h-100 flex-column mx-auto p-3">
       <%= render "shared/application_nav" %>
-
-      <%= login_helper %>
       
       <%= yield %>
 
-      <footer class="mt-auto text-white-50">
-        <%= copyright_generator %>
-        <%= source_helper("application") %>
-      </footer>
+      <%= render "shared/application_footer" %>
+      <%= source_helper("application") %>
     </div>
   </body>
 </html>

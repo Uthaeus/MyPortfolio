@@ -4,7 +4,6 @@
  * Globals
  */
 
-
 /* Custom default button */
 .btn-light,
 .btn-light:hover,
@@ -24,13 +23,15 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 62em;
+  min-height: 100vh;
 }
 
-
-/*
- * Header
- */
+.navigation-wrapper {
+    min-height: 30px;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+}
 
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, .5);
