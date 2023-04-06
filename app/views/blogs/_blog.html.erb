@@ -1,14 +1,16 @@
-<div id="<%= dom_id blog %>">
-  <h3><%= blog.title %></h3>
-  <p>Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
-  <p><%= blog.body %></p>
-  <p><%= link_to blog.status, toggle_status_blog_path(blog) %></p>
-  <p>
-    <%= link_to "Show this blog", blog %> |
-    <%= link_to "Edit this blog", edit_blog_path(blog) if logged_in?(:site_admin) %> |
+
+
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1"><%= link_to blog.title.upcase, blog %></h2>
+  <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
+  <p class="blog-post-meta">
+    <%= link_to blog.status, toggle_status_blog_path(blog) if logged_in?(:site_admin) %> /
+    <%= link_to "Show this blog", blog %> /
+    <%= link_to "Edit this blog", edit_blog_path(blog) if logged_in?(:site_admin) %> /
     <%= link_to "Delete this blog", blog, method: :delete if logged_in?(:site_admin) %>
   </p>
-
-</div>
-
-
+  <p>
+    <%= blog.body %>
+  </p>
+  
+</article>
