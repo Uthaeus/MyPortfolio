@@ -6,7 +6,7 @@ module ApplicationHelper
             " ".html_safe +
             (link_to 'Sign Up', new_user_registration_path, class: style)
          else 
-            button_to 'Logout', destroy_user_session_path, method: :delete, class: style 
+            button_to 'Logout', destroy_user_session_path, method: :delete, class: "logout-btn #{style}"
         end 
     end
 
