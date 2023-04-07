@@ -1,4 +1,10 @@
 @import 'bootstrap';
+@import 'font-awesome';
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -60,13 +66,30 @@
    * Footer
    */
   .blog-footer {
+    width: 100%;
     padding: 2.5rem 0;
     color: #727272;
     text-align: center;
     background-color: #f9f9f9;
     border-top: .05rem solid #e5e5e5;
+    position: absolute;
+    bottom: 0;
   }
   .blog-footer p:last-child {
     margin-bottom: 0;
   }
   
+/* 
+  Custom styles
+*/
+
+.logout-btn {
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+  }
+
+.social-links li a {
+    font-size: 2em;
+    color: #161616;
+}
