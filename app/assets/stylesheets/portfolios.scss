@@ -1,18 +1,40 @@
 @import 'bootstrap';
+@import 'font-awesome';
 @import 'variables';
 
 body {
-    background-color: $dark-grey;
-    color: $purple;
+    background-color: #121212;
+    color: #ccc;
 }
 
 .card {
-    background-color: $dark-purple;
-    color: $tan;
+    background-color: $dark-green;
+    color: $tan-green;
 }
 
 .logout-btn {
     border: none;
     background-color: transparent;
     margin-left: 20px;
+}
+
+.portfolio-social-nav-links {
+    font-size: 2em;
+    
+
+    a {
+        color: $green;
+        padding: 10px;
+        transition: 0.2s ease-in-out;
+    }
+
+    a:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.portfolio-btn-primary {
+    background-color: $dark-grey;
+    color: white;
 }
