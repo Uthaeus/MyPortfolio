@@ -64,6 +64,7 @@ group :development do
   # gem "spring"
 end
 
+gem 'jquery-rails', '~> 4.5', '>= 4.5.1'
 gem 'friendly_id', '~> 5.5'
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'bootstrap', '~> 5.2', '>= 5.2.3'
