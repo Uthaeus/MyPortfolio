@@ -12,6 +12,10 @@ body {
     color: $tan-green;
 }
 
+li a.active {
+    color: $dark-grey;
+}
+
 .logout-btn {
     border: none;
     background-color: transparent;
@@ -26,12 +30,16 @@ body {
         color: $green;
         padding: 10px;
         transition: 0.2s ease-in-out;
+
+        
     }
 
     a:hover {
         cursor: pointer;
         opacity: 0.8;
     }
+
+    
 }
 
 .portfolio-btn-primary {

@@ -84,6 +84,18 @@ body {
   Custom styles
 */
 
+.blog-nav {
+  a {
+    font-size: 1.3em;
+    margin: 10px 15px;
+  }
+
+  a.active {
+    font-weight: bold;
+    color: #161616;
+  }
+}
+
 .logout-btn {
     border: none;
     background-color: transparent;

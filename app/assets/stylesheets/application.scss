@@ -56,6 +56,12 @@ body {
 Custom Styles
 */
 
+.app-nav {
+  a {
+    margin: 0 15px;
+  }
+}
+
 .logout-btn {
   border: none;
   background-color: transparent;

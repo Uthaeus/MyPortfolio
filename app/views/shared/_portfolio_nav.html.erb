@@ -15,11 +15,7 @@
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4>Explore</h4>
                     <ul class="list-unstyled">
-                        <li><%= link_to 'Home', root_path, class: "nav-link fw-bold py-1 px-0 active" %></li>
-                        <li><%= link_to 'About', about_me_path, class: "nav-link fw-bold py-1 px-0" %></li>
-                        <li><%= link_to 'Contact', contact_path, class: "nav-link fw-bold py-1 px-0" %></li>
-                        <li><%= link_to 'Blogs', blogs_path, class: "nav-link fw-bold py-1 px-0" %></li>
-                        <li><%= link_to 'Portfolios', portfolios_path, class: "nav-link fw-bold py-1 px-0" %></li>
+                        <%= nav_helper "nav-link fw-bold py-1 px-0", "li" %>
                         <li><%= login_helper "nav-link fw-bold py-1 px-0" %></li>
                     </ul>
                 </div>
