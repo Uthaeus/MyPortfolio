@@ -5,7 +5,7 @@
             <p><%= link_to "Create New Item", new_portfolio_path, class: 'btn portfolio-btn-primary' %></p>
         <% end %>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 sortable">
 
             <%= render partial: 'portfolio_item', collection: @portfolio_items %>
 

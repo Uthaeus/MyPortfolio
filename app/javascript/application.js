@@ -4,6 +4,15 @@ import "controllers"
 import "jquery"
 import "jquery_ujs"
 import "./jquery_ui"
-import "./html.sortable"
+import sortable from "./html.sortable"
 import "popper"
 import "bootstrap"
+
+const ready = () => {
+    const sortee = document.querySelector('.sortable');
+    return sortable(sortee);
+}
+
+$(function () {
+    ready();
+});
