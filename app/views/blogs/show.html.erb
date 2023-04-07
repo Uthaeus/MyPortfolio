@@ -1,11 +1,19 @@
 <div class="col-md-8">
 
-  <%= render @blog %>
+  <h2><%= @blog.title %></h2>
+
+  <% if logged_in?(:site_admin) %>
+    <p>
+      <%= link_to "Edit this blog", edit_blog_path(@blog) %> |
+      <%= button_to "Destroy this blog", @blog, method: :delete %>
+    </p>
+  <% end %>
+
+  <p>
+    <%= @blog.body %>
+  </p>
 
   <div>
-    <%= link_to "Edit this blog", edit_blog_path(@blog) if logged_in?(:site_admin) %> |
     <%= link_to "Back to blogs", blogs_path %>
-
-    <%= button_to "Destroy this blog", @blog, method: :delete if logged_in?(:site_admin) %>
   </div>
 </div>
