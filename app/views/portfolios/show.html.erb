@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class='show-actions-wrapper'>
-        <p><%= link_to "Back to Portfolios", portfolios_path, class: 'btn portfolio-btn-primary' %></p>
+        
         <% if logged_in?(:site_admin) %>
             <p><%= link_to "Edit", edit_portfolio_path(@portfolio_item), class: 'btn portfolio-btn-primary' %>
             <%= button_to "Delete Portfolio Item", @portfolio_item, method: :delete, class: 'btn btn-danger' %></p>
