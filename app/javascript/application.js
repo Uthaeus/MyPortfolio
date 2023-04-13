@@ -7,6 +7,7 @@ import "./jquery_ui"
 import sortable from "./html.sortable"
 import "popper"
 import "bootstrap"
+import "@nathanvda/cocoon"
 
 const ready = () => {
     const sortee = document.querySelector('.sortable');
