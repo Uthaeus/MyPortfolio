@@ -3,9 +3,9 @@
 
 <div class="col" data-id="<%= portfolio_item.id %>">
     <div class="card shadow-sm">
-        <% if portfolio_item.thumb_image? %>
-            <%= image_tag "#{portfolio_item.thumb_image}" %>
-        <% end %>
+        
+        <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb') %>
+
         <div class="card-body">
             <h4><%= portfolio_item.title %></h4>
             <p class="card-text"><%= portfolio_item.subtitle %></p>
