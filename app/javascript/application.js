@@ -9,6 +9,7 @@ import "popper"
 import "bootstrap"
 import "@nathanvda/cocoon"
 
+
 const ready = () => {
     const sortee = document.querySelector('.sortable');
     return sortable(sortee);

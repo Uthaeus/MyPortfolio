@@ -5,8 +5,7 @@ module PortfoliosHelper
     end
 
     def portfolio_img img, type
-        puts img 
-        if img
+        if img.length != 0
             img 
         elsif type == 'thumb'
             image_generator(height: '350', width: '200')
