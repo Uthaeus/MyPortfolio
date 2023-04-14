@@ -1,3 +1,5 @@
+# refactor into javascript
+
 JQuery(document).on 'turbolinks:load', ->
     comments = $('#comments')
     if comments.length > 0 
