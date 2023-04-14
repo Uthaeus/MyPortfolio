@@ -102,3 +102,21 @@ Custom Styles
   background-size: cover;
 }
 
+.tech-news{
+  color: #161616;
+  margin: 20px;
+
+  .card {
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 0.8);
+  }
+
+  a {
+    color: #3a504e;
+
+    &:hover {
+      cursor: pointer;
+      color: #43817c;
+    }
+  }
+}
