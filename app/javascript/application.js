@@ -8,6 +8,8 @@ import sortable from "./html.sortable"
 import "popper"
 import "bootstrap"
 import "@nathanvda/cocoon"
+import "@rails/actioncable"
+//import "channels"
 
 
 const ready = () => {
