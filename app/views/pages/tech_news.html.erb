@@ -1,0 +1,15 @@
+<main class="px-3 align-middle">
+    <h1>Rails News</h1>
+    <p class="lead">Most recent happenings</p>
+    <div class='row'>
+        <% @tweets.each do |tweet| %>
+            <div class='col-md-6'>
+                <div class='tech-news'>
+                    <div class='card'>
+                        <%= tweet %>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</main>

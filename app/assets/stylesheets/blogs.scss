@@ -1,6 +1,5 @@
 @import 'bootstrap';
 @import 'font-awesome';
-@import 'gritter';
 
 body {
     position: relative;
@@ -100,7 +99,14 @@ body {
 .logout-btn {
     border: none;
     background-color: transparent;
-    margin-left: 20px;
+    font-size: 1.3em;
+    color: #161616;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.6;
+    }
   }
 
 .social-links li a {
