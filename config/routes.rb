@@ -10,12 +10,13 @@ Rails.application.routes.draw do
   get 'tech-news', to: 'pages#tech_news'
 
   resources :blogs do 
+    resources :comments
     member do 
       get :toggle_status
     end
   end
 
-  mount ActionCable.server => '/cable'
+  #mount ActionCable.server => '/cable'
 
   root "pages#home"
 end

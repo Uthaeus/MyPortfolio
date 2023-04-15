@@ -8,15 +8,13 @@ import sortable from "./html.sortable"
 import "popper"
 import "bootstrap"
 import "@nathanvda/cocoon"
-import "@rails/actioncable"
-//import "channels"
 
 
-const ready = () => {
-    const sortee = document.querySelector('.sortable');
-    return sortable(sortee);
+function ready() {
+    const sortee = document.querySelector('.sortable')
+    return sortable(sortee)
 }
 
-$(function () {
-    ready();
-});
+// $(function () {
+//     ready();
+// });

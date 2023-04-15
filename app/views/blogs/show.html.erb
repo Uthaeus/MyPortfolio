@@ -13,10 +13,12 @@
     <%= @blog.body %>
   </p>
 
-  <%= render 'comments/comment_form' %>
+  <%= render 'comments/comment_form', blog: @blog %>
 
-  <div id='comments' data-blog-id="<%= @blog.id %>">
-    <%= render @blog.comments %>
+  <%= turbo_stream_from 'comments' %>
+
+  <div id='comments'>
+    <%= render @blog.comments.reverse %>
   </div>
 
   <div>
