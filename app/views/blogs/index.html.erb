@@ -3,7 +3,13 @@
 
 <div class="col-md-8">
   <h3 class="pb-4 mb-4 fst-italic border-bottom">
-    Here are some thoughts <%= link_to "| New blog", new_blog_path if logged_in?(:site_admin) %>
+    Here are some thoughts 
+    <span>
+      <%= link_to "| New blog", new_blog_path if logged_in?(:site_admin) %>
+    </span>
+    <span>
+      <%= link_to "| New topic", new_topic_path %>
+    </span>
   </h3>
   <%= paginate @blogs %>  
 
