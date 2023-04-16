@@ -68,7 +68,7 @@ body {
    */
   .blog-footer {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 20px;
     padding: 2.5rem 0;
     color: #727272;
     text-align: center;
@@ -113,4 +113,18 @@ body {
 .social-links li a {
     font-size: 2em;
     color: #161616;
+}
+
+.comment-card {
+  margin-top: 15px;
+}
+
+.comment-attribution {
+  font-size: 0.8em;
+  color: #727272;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: 700;
 }

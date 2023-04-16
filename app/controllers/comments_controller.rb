@@ -5,9 +5,6 @@ class CommentsController < ApplicationController
         @comment = @blog.comments.build(comment_params)
         @comment.user = current_user
         @comment.save
-        
-        turbo_stream.replace(@blog, partial: 'comments/comment_form', locals: { comment: @comment })
-
     end
 
     private
