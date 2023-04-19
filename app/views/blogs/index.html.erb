@@ -8,7 +8,7 @@
       <%= link_to "| New blog", new_blog_path if logged_in?(:site_admin) %>
     </span>
     <span>
-      <%# <%= link_to "| New topic", new_topic_path %> 
+      <%= link_to "| Topics", topics_path %> 
     </span>
   </h3>
   <%= paginate @blogs %>  
