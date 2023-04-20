@@ -142,11 +142,19 @@ body {
 }
 
 .comment-card {
-  margin-top: 15px;
+  width: 75%;
+  margin-top: 5px;
+  box-shadow: 1px 1px 1px 1px #727272;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .comment-attribution {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #727272;
   font-style: italic;
 }
