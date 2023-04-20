@@ -357,6 +357,7 @@ DEPENDENCIES
   rails (~> 7.0.4, >= 7.0.4.3)
   redcarpet (~> 3.6)
   redis (~> 5.0, >= 5.0.6)
+  sassc-rails
   sprockets-rails
   stimulus-rails
   turbo-rails

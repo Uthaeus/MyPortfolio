@@ -1,17 +1,27 @@
 <div class="col-md-8">
 
   <h2><%= @blog.title %></h2>
+  
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><%= link_to 'Back to Blogs', blogs_path %></li>
+      <li class="breadcrumb-item"><%= link_to @blog.topic.title, topic_path(@blog.topic) %></li>
+      <li class="breadcrumb-item active" aria-current="page"><%= @blog.title %></li>
 
-  <p>
-    <%= @blog.topic.title %>
-  </p>
-
-  <% if logged_in?(:site_admin) %>
-    <p>
-      <%= link_to "Edit this blog", edit_blog_path(@blog) %> |
-      <%= button_to "Delete this blog", @blog, method: :delete, class: 'btn btn-danger' %>
-    </p>
-  <% end %>
+      <% if logged_in?(:site_admin) %>
+        <li class="breadcrumb-item text-end">
+          <%= link_to edit_blog_path(@blog), class: 'edit-icon' do %>
+            <i class="bi bi-pencil-square"></i>
+          <% end %>
+        </li>
+        <li class="breadcrumb-item text-end">
+          <%= link_to @blog, method: :delete, class: 'delete-icon' do %>
+            <i class="bi bi-trash"></i>
+          <% end %>
+        </li>
+      <% end %>
+    </ol>
+  </nav>
 
   <p>
     <%= markdown @blog.body %>

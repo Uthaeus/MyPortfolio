@@ -1,6 +1,12 @@
 
 <div class="col-md-8">
   <h1>Editing blog</h1>
+
+  <% if logged_in?(:site_admin) %>
+    <%= link_to @blog, method: :delete, class: 'delete-icon' do %>
+      <i class="bi bi-trash"></i>
+    <% end %>
+  <% end %>
   <hr>
   
   <%= render "form", blog: @blog %>

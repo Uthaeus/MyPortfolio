@@ -128,3 +128,23 @@ body {
 .comment-name {
   font-weight: 700;
 }
+
+.edit-icon {
+  font-size: 1.2em;
+  padding: 0 5px;
+  color: #585d10;
+
+  &:hover {
+    color: #8a8f10;
+  }
+}
+
+.delete-icon {
+  font-size: 1.2em;
+  padding: 0 5px;
+  color: #a00;
+
+  &:hover {
+    color: #d00;
+  }
+}
