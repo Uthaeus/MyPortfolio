@@ -4,6 +4,26 @@
         <%# <img src='' width='300' alt='Profile Image' /> %>
 
         <%= image_tag "att_park.jpg", width: 300, alt: "Profile Image" %>
+
+        <div class='skills'>
+            <% @skills.each do |skill| %>
+                <div class='skill'>
+                    <h4><%= skill.title %></h4>
+                    <div class='progress'>
+                        <div
+                            class='progress-bar progress-bar-striped progress-bar-animated bg-success'
+                            role='progressbar'
+                            style='width: <%= skill.percent_utilized %>%;'
+                            aria-valuenow='<%= skill.percent_utilized %>'
+                            aria-valuemin='0'
+                            aria-valuemax='100'
+                        >
+                            <%= skill.percent_utilized %>% Utilized
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
     </div>
 
     <div class='col-md-8'>
