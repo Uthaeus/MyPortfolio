@@ -4,7 +4,7 @@
 <div class="col" data-id="<%= portfolio_item.id %>">
     <div class="card shadow-sm">
         
-        <%= image_tag portfolio_img("#{portfolio_item.thumb_image}", 'thumb') %>
+        <%= image_tag portfolio_img("#{portfolio_item.thumb_image}", 'thumb'), width: '100%' %>
 
         <div class="card-body">
             <h4><%= portfolio_item.title %></h4>
