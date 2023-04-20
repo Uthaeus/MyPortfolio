@@ -1,6 +1,8 @@
 <div class="album py-5 bg-body-tertiary">
     <div class="container">
 
+        <%= source_helper("alert alert-success") %>
+
         <% if logged_in?(:site_admin) %>
             <p><%= link_to "Create New Item", new_portfolio_path, class: 'btn portfolio-btn-primary' %></p>
         <% end %>
