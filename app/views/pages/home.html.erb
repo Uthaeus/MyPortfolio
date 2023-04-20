@@ -1,10 +1,36 @@
+<div class='home-container'>
 
+    <main class="px-3 align-middle">
+        <h1>Welcome to my portfolio</h1>
+        <p class="lead">“You learn more from failure than from success. Don’t let it stop you. Failure builds character.” — Unknown</p>
+        
+    </main>
 
-<main class="px-3 align-middle">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-    <p class="lead">
-        <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-light fw-bold border-white bg-white" %>
-    </p>
-</main>
+    <div class='btn-container'>
+        <p class="home-btn-wrapper">
+            <%= link_to "About Me", about_me_path, class: "btn home-about-btn" %>
+            <button
+                class='btn home-about-btn'
+                type='button'
+                data-bs-toggle='collapse'
+                data-bs-target='#projects-home'
+                aria-expanded='false'
+                aria-controls='projects'
+            >
+                Recent Projects
+            </button>
+
+            <p>
+                <div class='collapse' id='projects-home'>
+                    <div class='card home-card-block'>
+                        Home Project 1
+                    </div>
+                    <div class='card home-card-block'>
+                        Project 2
+                    </div>
+                </div>
+            </p>
+        </p>
+    </div>
+</div>
 
