@@ -1,76 +1,82 @@
+<div class='about-container'>
+    <div class='row'>
+        <div class='col-md-4'>
+            <%# <img src='' width='300' alt='Profile Image' /> %>
 
-<div class='row'>
-    <div class='col-md-4'>
-        <%# <img src='' width='300' alt='Profile Image' /> %>
+            <%= image_tag "cloud_man.jpeg", width: '100%', alt: "Profile Image", class: 'about-img' %>
 
-        <%= image_tag "att_park.jpg", width: 300, alt: "Profile Image" %>
-
-        <div class='skills'>
-            <% @skills.each do |skill| %>
-                <div class='skill'>
-                    <h4><%= skill.title %></h4>
-                    <div class='progress'>
-                        <div
-                            class='progress-bar progress-bar-striped progress-bar-animated bg-success'
-                            role='progressbar'
-                            style='width: <%= skill.percent_utilized %>%;'
-                            aria-valuenow='<%= skill.percent_utilized %>'
-                            aria-valuemin='0'
-                            aria-valuemax='100'
-                        >
-                            <%= skill.percent_utilized %>% Utilized
+            <div class='skills'>
+                <% @skills.each do |skill| %>
+                    <div class='skill'>
+                        <h4><%= skill.title %></h4>
+                        <div class='progress'>
+                            <div
+                                class='progress-bar progress-bar-striped progress-bar-animated bg-success'
+                                role='progressbar'
+                                style='width: <%= skill.percent_utilized %>%;'
+                                aria-valuenow='<%= skill.percent_utilized %>'
+                                aria-valuemin='0'
+                                aria-valuemax='100'
+                            >
+                                <%= skill.percent_utilized %>% Utilized
+                            </div>
                         </div>
                     </div>
-                </div>
-            <% end %>
+                <% end %>
+            </div>
         </div>
-    </div>
 
-    <div class='col-md-8'>
-        Bio........
-
-        <p>
-            <button
-                class='btn btn-primary'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#projects'
-                aria-expanded='false'
-                aria-controls='projects'
-            >
-                Recent Projects
-            </button>
-
-            <button
-                class='btn btn-primary'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#courses'
-                aria-expanded='false'
-                aria-controls='courses'
-            >
-                Recent Courses
-            </button>
-        </p>
-
-        <p>
-            <div class='collapse' id='projects'>
-                <div class='card card-block'>
-                    Project 1
+        <div class='col-md-8'>
+            <div class='about-card'>
+                <div class='about-content'>
+                    <h2>About Me</h2>
+                    <hr class='w-75 mx-auto'>
+                    <p class='about-description'>Hi! My name is Roman and I grew up in Utah, USA, mostly near the Salt Lake City area. I enjoy travelling, food, oceans, but mostly watching my boys do what they like to do. I learned some coding on my own when I was young and rediscovered my interest a few years ago. I'm now persuing skills that will hopefully lead me to a professional path in the tech world. So please feel free to <%= link_to 'contact me', contact_path%> if you'd like to work together or just to say hi.</p> 
                 </div>
-                <div class='card card-block'>
-                    Project 2
-                </div>
+                <p>
+                    <button
+                        class='btn about-btn'
+                        type='button'
+                        data-bs-toggle='collapse'
+                        data-bs-target='#projects'
+                        aria-expanded='false'
+                        aria-controls='projects'
+                    >
+                        Recent Projects
+                    </button>
+
+                    <button
+                        class='btn about-btn'
+                        type='button'
+                        data-bs-toggle='collapse'
+                        data-bs-target='#courses'
+                        aria-expanded='false'
+                        aria-controls='courses'
+                    >
+                        Recent Courses
+                    </button>
+                </p>
+
+                <p>
+                    <div class='collapse' id='projects'>
+                        <div class='card card-block'>
+                            Project 1
+                        </div>
+                        <div class='card card-block'>
+                            Project 2
+                        </div>
+                    </div>
+
+                    <div class='collapse' id='courses'>
+                        <div class='card card-block'>
+                            Course 1
+                        </div>
+                        <div class='card card-block'>
+                            Course 2
+                        </div>
+                    </div>
+                </p>
             </div>
-
-            <div class='collapse' id='courses'>
-                <div class='card card-block'>
-                    Course 1
-                </div>
-                <div class='card card-block'>
-                    Course 2
-                </div>
-            </div>
-        </p>
+        </div>
     </div>
 </div>

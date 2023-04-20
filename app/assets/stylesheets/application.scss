@@ -53,6 +53,40 @@ body {
 }
 
 /* 
+  About page
+*/
+
+.about-container {
+  margin-top: 25px;
+
+  .about-img {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .about-card {
+    width: 100%;
+    padding: 10px;
+    margin-top: 3rem;
+    margin-left: 25px;
+    background-color: rgba(200, 200, 200, 0.113);
+
+    .about-content {
+
+      .about-description {
+        text-align: left;
+      }
+    }
+  }
+
+  .about-btn {
+    margin: 10px 20px;
+    background-color: #0d5bd75d;
+    color: white;
+  }
+}
+
+/* 
 Custom Styles
 */
 
@@ -124,6 +158,8 @@ Custom Styles
 
 .card-block {
   margin: 5px 0;
+  font-size: 1.2em;
+  color: #161616;
 }
 
 .skill {
