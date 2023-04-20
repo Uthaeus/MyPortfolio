@@ -1,3 +1,9 @@
 <div class='topic-item-wrapper'>
     <%= link_to topic.title, topic_path(topic) %>
+
+    <% if logged_in?(:site_admin) && topic.blogs.count == 0 %>
+        <%= link_to topic, method: :delete, class: 'delete-icon' do %>
+            <i class="bi bi-trash"></i>
+        <% end %>
+    <% end %>
 </div>

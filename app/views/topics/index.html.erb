@@ -1,10 +1,11 @@
 <div class='col-md-8'>
     <div class='topic-index-container'>
         <h1>Topics</h1>
+        <%= link_to "Create New Topic", new_topic_path if logged_in?(:site_admin) %>
 
         <%= render @topics %>
 
-        <div>
+        <div class='my-5'>
             <%= link_to "Back to blogs", blogs_path %>
         </div>
     </div>
