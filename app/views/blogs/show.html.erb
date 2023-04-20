@@ -2,12 +2,14 @@
 
   <h2><%= @blog.title %></h2>
   
-  <nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb" class='bread-nav'>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><%= link_to 'Back to Blogs', blogs_path %></li>
       <li class="breadcrumb-item"><%= link_to @blog.topic.title, topic_path(@blog.topic) %></li>
       <li class="breadcrumb-item active" aria-current="page"><%= @blog.title %></li>
+    </ol>
 
+    <ol class="breadcrumb">
       <% if logged_in?(:site_admin) %>
         <li class="breadcrumb-item text-end">
           <%= link_to edit_blog_path(@blog), class: 'edit-icon' do %>

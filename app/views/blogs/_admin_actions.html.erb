@@ -1,0 +1,23 @@
+<% if logged_in?(:site_admin) %>
+    <nav aria-label="breadcrumb" class='bread-nav'>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <%= link_to toggle_status_blog_path(blog), class: 'file-icon', style: blog_status_color(blog) do %>
+                    <i class="bi bi-file-text"></i>
+                <% end %>
+            </li>
+        </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <%= link_to edit_blog_path(blog), class: 'edit-icon' do %>
+                    <i class="bi bi-pencil-square"></i>
+                <% end %>
+            </li>
+            <li class="breadcrumb-item">
+                <%= link_to blog, method: :delete, class: 'delete-icon' do %>
+                    <i class="bi bi-trash"></i>
+                <% end %>
+            </li>
+        </ol>
+    </nav>
+<% end %>

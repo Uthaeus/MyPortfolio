@@ -62,6 +62,17 @@ body {
     margin-bottom: 1.25rem;
     color: #727272;
   }
+
+  .bread-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding: 4px 12px;
+    background-color: #c7c5c57a;
+    border-radius: 5px;
+  }
   
   /*
    * Footer
@@ -143,10 +154,22 @@ body {
   font-weight: 700;
 }
 
+.file-icon {
+  font-size: 1.3em;
+  padding: 0 5px;
+  color: #10155d;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
 .edit-icon {
   font-size: 1.2em;
   padding: 0 5px;
   color: #585d10;
+  transition: color 0.3s ease-in-out;
 
   &:hover {
     color: #8a8f10;
@@ -157,6 +180,7 @@ body {
   font-size: 1.2em;
   padding: 0 5px;
   color: #a00;
+  transition: color 0.3s ease-in-out;
 
   &:hover {
     color: #d00;
