@@ -148,3 +148,29 @@ body {
     color: #d00;
   }
 }
+
+.topic-index-container {
+  width: 100%;
+  min-height: calc(100vh - 180px);
+  display: flex;
+  flex-direction: column;
+
+  .topic-item-wrapper {
+    width: 50%;
+    margin: 15px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #161616;
+    
+
+    a {
+      font-size: 1.5em;
+      color: #161616;
+      text-decoration: none;
+      transition: 0.4s ease-in-out;
+
+      &:hover {
+        color: #383a27;
+      }
+    }
+  }
+}

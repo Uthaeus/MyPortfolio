@@ -1,5 +1,11 @@
 <div class='col-md-8'>
-    <h1>Topics</h1>
+    <div class='topic-index-container'>
+        <h1>Topics</h1>
 
-    <%= render @topics %>
+        <%= render @topics %>
+
+        <div>
+            <%= link_to "Back to blogs", blogs_path %>
+        </div>
+    </div>
 </div>
