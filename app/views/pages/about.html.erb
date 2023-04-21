@@ -55,24 +55,53 @@
                     >
                         Recent Courses
                     </button>
+
+                    <button
+                        class='btn about-btn'
+                        type='button'
+                        data-bs-toggle='collapse'
+                        data-bs-target='#socials'
+                        aria-expanded='false'
+                        aria-controls='socials'
+                    >
+                        Socials
+                    </button>
                 </p>
 
                 <p>
                     <div class='collapse' id='projects'>
                         <div class='card card-block'>
-                            Project 1
+                            <%= link_to "All my project", portfolios_path %>
                         </div>
                         <div class='card card-block'>
-                            Project 2
+                            <a href='#' target='_blank'>Video Editing Portfolio Site</a>
+                        </div>
+                        <div class='card card-block'>
+                            <a href="#" target='_blank'>Salon Website</a>
+                        </div>
+                        <div class='card card-block'>
+                            <a href="#" target='_blank'>Personal Portfolio using ReactJs</a>
                         </div>
                     </div>
 
                     <div class='collapse' id='courses'>
                         <div class='card card-block'>
-                            Course 1
+                            DevCamp Full Stack Development with Ruby on Rails
                         </div>
                         <div class='card card-block'>
-                            Course 2
+                            React - The Complete Guide by Maximilian Schwarzmüller
+                        </div>
+                        <div class='card card-block'>
+                            React Native - Practical Guide by Maximilian Schwarzmüller
+                        </div>
+                    </div>
+                
+                    <div class='collapse' id='socials'>
+                        <div class='social-card card-block'>
+                            <a href="https://github.com/Uthaeus" target="_blank"><%= fa_icon "github" %></a>
+                            <a href="https://twitter.com/mjkisproblyagod" target="_blank"><%= fa_icon "twitter" %></a>
+                            <a href="https://www.facebook.com/roman.lavery" target="_blank"><%= fa_icon "facebook" %></a>
+                            <a href="https://www.linkedin.com/in/roman-lavery-software-dev/" target="_blank"><%= fa_icon "linkedin" %></a>
                         </div>
                     </div>
                 </p>
