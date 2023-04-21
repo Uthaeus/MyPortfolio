@@ -27,4 +27,12 @@ module BlogsHelper
     def blog_status_color(blog)
         'color: red;' if blog.draft?
     end
+
+    def truncate_blog text 
+        if text.length > 100
+            text[0..100] + "..."
+        else
+            text
+        end
+    end
 end

@@ -15,6 +15,6 @@ function ready() {
     return sortable(sortee)
 }
 
-// $(function () {
-//     ready();
-// });
+$(function () {
+    ready();
+});
