@@ -1,0 +1,24 @@
+
+<h1>New Skill</h1>
+
+<div class='w-50'>
+    <%= form_for(@skill) do |form| %>
+        <div class='form-group p-3'>
+            <%= form.label :title %>
+            <%= form.text_field :title, class: 'form-control' %>
+        </div>
+
+        <div class='form-group p-3'>
+            <%= form.label :percent_utilized %>
+            <%= form.text_field :percent_utilized, class: 'form-control' %>
+        </div>
+
+        <div class='form-group p-2 text-end'>
+            <%= form.submit "Save Skill", class: 'btn btn-primary' %>
+        </div>
+    <% end %>
+</div>
+<div class='my-5'>
+    <%= link_to "Back to home", root_path %>/
+    <%= link_to "Back to skills", skills_path %>
+</div>

@@ -1,0 +1,11 @@
+
+<div class='skills-container'>
+    <h1>Skills</h1>
+    <%= link_to "Create New Skill", new_skill_path %>
+
+    <%= render @skills %>
+
+    <div class='my-5'>
+        <%= link_to "Back to home", root_path %>
+    </div>
+</div>

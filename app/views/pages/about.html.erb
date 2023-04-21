@@ -6,6 +6,7 @@
             <%= image_tag "cloud_man.jpeg", width: '100%', alt: "Profile Image", class: 'about-img' %>
 
             <div class='skills'>
+                <%= link_to 'Skills Menu', skills_path, class: 'skill-menu-link' if logged_in?(:site_admin) %>
                 <% @skills.each do |skill| %>
                     <div class='skill'>
                         <h4><%= skill.title %></h4>
