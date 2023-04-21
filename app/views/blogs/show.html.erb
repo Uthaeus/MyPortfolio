@@ -1,6 +1,6 @@
 <div class="col-md-8">
 
-  <h2><%= @blog.title %></h2>
+  <h2 class='border-bottom pt-3'><%= @blog.title %></h2>
   
   <nav aria-label="breadcrumb" class='bread-nav'>
     <ol class="breadcrumb">
@@ -28,7 +28,7 @@
   <p>
     <%= markdown @blog.body %>
   </p>
-
+  
   <%= render 'comments/comment_form', blog: @blog %>
 
   <%= turbo_stream_from 'comments' %>
