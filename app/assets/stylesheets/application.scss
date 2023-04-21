@@ -91,7 +91,7 @@ body {
 
       &:hover {
         cursor: pointer;
-        background-color: #0d5bd7;
+        background-color: #415A77;
       }
     }
   }
@@ -104,12 +104,13 @@ body {
     font-size: 1.2em;
 
     a {
-      color: #10236c;
+      color: #415A77;
+      text-decoration: none;
       transition: all 0.3s ease-in-out;
 
       &:hover {
         cursor: pointer;
-        color: #0d5bd7;
+        color: #778DA9;
       }
     }
   }  
@@ -233,12 +234,12 @@ Custom Styles
   color: #161616;
   
   a {
-    color: #10236c;
+    color: #415A77;
     transition: all 0.3s ease-in-out;
 
     &:hover {
       cursor: pointer;
-      color: #0d5bd7;
+      color: #778DA9;
     }
   }
 }

@@ -2,10 +2,10 @@
   <h3 class="pb-4 mb-4 fst-italic border-bottom">
     Here are some thoughts 
     <span class='mx-3'>
-      <%= link_to "| New blog", new_blog_path if logged_in?(:site_admin) %>
+      <%= link_to "Create New Blog", new_blog_path, class: "mast-link" if logged_in?(:site_admin) %>
     </span>
     <span class='mx-3'>
-      <%= link_to "| Topics", topics_path %> 
+      <%= link_to "All Topics", topics_path, class: "mast-link" %> 
     </span>
   </h3>
 </div>
