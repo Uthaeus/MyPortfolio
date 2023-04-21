@@ -2,5 +2,11 @@
 <div class='skill-item-wrapper'>
     <%= link_to skill.title, skill_path(skill) %>
 
-    <%= fa_icon 'trash' %>
+    <div>
+        <%= skill.percent_utilized %>
+
+        <%= link_to skill, method: :delete, class: 'delete-skill-icon' do %>
+            <%= fa_icon 'trash'%>
+        <% end %>
+    </div>
 </div>

@@ -1,8 +1,10 @@
 
 
 <div class='skill-show-container'>
-    <h1><%= @skill.title %></h1>
-    <h2><%= @skill.percent_utilized %></h2>
+    <div class='skill-show-wrapper'>
+        <h1><%= @skill.title %></h1>
+        <h2><%= @skill.percent_utilized %></h2>
+    </div>
 
     <div class='my-5'>
         <%= link_to "Back to skills", skills_path %> /

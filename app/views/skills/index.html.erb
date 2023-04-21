@@ -1,7 +1,9 @@
 
 <div class='skills-container'>
-    <h1>Skills</h1>
-    <%= link_to "Create New Skill", new_skill_path %>
+    <div class='skill-index-header'>
+        <h1>Skills</h1>
+        <%= link_to "Create New Skill", new_skill_path %>
+    </div>
 
     <%= render @skills %>
 
