@@ -1,7 +1,6 @@
-<div class="album py-5 bg-body-tertiary">
-    <div class="container">
-        <%= render 'shared/portfolio_masthead' %>
-
+<div class="album bg-body-tertiary">
+    <%= render 'shared/portfolio_masthead' %>
+    <div class='container'>
         <%= source_helper("alert alert-success") %>
 
         <% if logged_in?(:site_admin) %>
