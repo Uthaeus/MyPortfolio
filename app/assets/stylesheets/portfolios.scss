@@ -5,17 +5,28 @@
 
 body {
     font-family: 'Mulish', sans-serif;
-    background-color: #363535;
-    color: #ccc;
+    background-color: #335C67;
+    color: #FFF3B0;
+    min-height: calc(100vh - 100px);
+
+    a {
+        color: #E09F3E;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: #9E2A2B;
+        }
+    }
 }
 
 .card {
-    background-color: $dark-green;
-    color: $tan-green;
+    background-color: #540B0E;
+    color: #E09F3E;
 }
 
 li a.active {
-    color: $dark-grey;
+    color: $dark-green;
 }
 
 .logout-btn {
@@ -29,7 +40,7 @@ li a.active {
     
 
     a {
-        color: $green;
+        color: #9E2A2B;
         padding: 10px;
         transition: 0.2s ease-in-out;
 
@@ -44,10 +55,6 @@ li a.active {
     
 }
 
-.portfolio-btn-primary {
-    background-color: $green;
-    color: white;
-}
 
 .show-actions-wrapper {
     width: 100%;

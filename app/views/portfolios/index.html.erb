@@ -1,10 +1,11 @@
 <div class="album py-5 bg-body-tertiary">
     <div class="container">
+        <%= render 'shared/portfolio_masthead' %>
 
         <%= source_helper("alert alert-success") %>
 
         <% if logged_in?(:site_admin) %>
-            <p><%= link_to "Create New Item", new_portfolio_path, class: 'btn portfolio-btn-primary' %></p>
+            <p><%= link_to "Create New Item", new_portfolio_path, class: 'btn' %></p>
         <% end %>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 sortable">

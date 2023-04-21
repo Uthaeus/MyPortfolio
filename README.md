@@ -7,3 +7,4 @@
 - add links to dropdowns
 - adjust skills
 - skills controller?
+- tech news styles
