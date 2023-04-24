@@ -6,3 +6,5 @@
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
 //= link Smoke.mp4
+//= link cloud_man.jpeg
+//= link space-main1.jpg
