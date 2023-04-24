@@ -3,18 +3,8 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "jquery"
 import "jquery_ujs"
-import "jquery-ui"
-import sortable from "./html.sortable"
+import "./jquery_ui"
 import "popper"
 import "bootstrap"
 import "@nathanvda/cocoon"
 
-
-function ready() {
-    const sortee = document.querySelector('.sortable')
-    return sortable(sortee)
-}
-
-$(function () {
-    ready();
-});
