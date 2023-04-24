@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @user_check = User.count < 1
   end
 
   def about

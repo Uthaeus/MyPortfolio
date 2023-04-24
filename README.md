@@ -1,5 +1,1 @@
-# README
-
-### todos
-- adjust skills
-- skills controller?
+# Welcome to my portfolio

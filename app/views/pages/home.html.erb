@@ -2,6 +2,9 @@
 
     <main class="px-3 align-middle">
         <h1>Welcome to my portfolio</h1>
+        <% if @user_check %>
+            <%= link_to 'edit profile', edit_user_registration_path %>
+        <% end %>
         <p class="lead">"Welcome those big, sticky, complicated problems. In them are your most powerful opportunities." - 
 Ralph Marston</p>
         
