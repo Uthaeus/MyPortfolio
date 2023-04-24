@@ -13,4 +13,4 @@ Rails.application.config.assets.version = "1.0"
 
 Rails.application.config.assets.precompile += %w( blogs.scss )
 Rails.application.config.assets.precompile += %w( portfolios.scss )
-Rails.application.config.assets.precompile += %w( jquery.min.js jquery_ujs.js jquery_ui.min.js bootstrap.min.js popper.js )
+Rails.application.config.assets.precompile += %w( jquery.min.js jquery_ujs.js jquery-ui.min.js bootstrap.min.js popper.js )
